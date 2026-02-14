@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(135deg, #ffd6ec, #ffe6f7);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* หน้าแรก */
+.container {
+  margin-top: 100px;
+}
+
+h1 {
+  color: #ff4da6;
+}
+
+.gif {
+  width: 200px;
+  margin: 20px 0;
+}
+
+.buttons {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.yes {
+  background-color: #ff66b2;
+  color: white;
+  left: 50px;
+}
+
+.no {
+  background-color: #ffb3d9;
+  color: white;
+  left: 150px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* หน้า love */
+.heart-scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* หัวใจสติกเกอร์เต้น */
+.sticker-heart {
+  font-size: 120px;
+  animation: heartbeat 1s infinite ease-in-out;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+}
+
+/* เต้นตุบ ๆ */
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.15); }
+  40%  { transform: scale(1); }
+  60%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* ผลลัพธ์ */
+.result {
+  display: none;
+  margin-top: 120px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.flower {
+  width: 250px;
+  animation: popUp 0.8s ease forwards;
+}
+
+@keyframes popUp {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.back-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff66b2;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  transform: scale(1.1);
+  background-color: #ff4da6;
+}
+

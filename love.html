@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Love Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="heartLoader" class="heart-scene">
+  <div class="sticker-heart">💖</div>
+</div>
+
+<div id="resultContainer" class="result">
+  <img src="flower.png" class="flower">
+  <h1>Really?!! Yayy I love u 💕</h1>
+  <button class="back-btn" onclick="goBack()"> Go Back💌</button>
+</div>
+
+<script>
+setTimeout(() => {
+  document.getElementById("heartLoader").style.display = "none";
+  document.getElementById("resultContainer").style.display = "block";
+}, 3000);
+
+function goBack() {
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
